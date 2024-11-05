@@ -137,46 +137,137 @@
 <div id="job-list"></div>
 
 <script>
-  const jobs = [
-    { district: 'Saharanpur', role: 'Delivery Associate', company: 'LocalMart', address: '22, Circular Road, Saharanpur', phone: '9876543210', openings: 10, education: 'High School Diploma' },
-    { district: 'Saharanpur', role: 'Sales Executive', company: 'Saharanpur Electronics', address: 'Shop No. 12, Main Market, Sarai Road, Saharanpur', phone: '9876543211', openings: 3, education: 'High School Diploma' },
-    { district: 'Ambedkar Nagar', role: 'Accountant', company: 'Mittal & Sons Finance', address: '15/A, Gandhi Chowk, Saharanpur', phone: '9876543212', openings: 1, education: 'Bachelor’s in Commerce' },
-    { district: 'Amethi', role: 'Data Entry Operator', company: 'ABC Solutions', address: 'Plot No. 101, Industrial Area, Saharanpur', phone: '9876543213', openings: 2, education: '8th Pass' },
-    { district: 'Amroha (Jyotiba Phule Nagar)', role: 'Office Assistant', company: 'Sharma Enterprises', address: '56, Nehru Colony, Saharanpur', phone: '9876543214', openings: 2, education: 'Intermediate or Higher' },
-    { district: 'Auraiya', role: 'Field Sales Manager', company: 'Gupta Agro Products', address: '19, Agriculture Market, Nakur, Saharanpur', phone: '9876543215', openings: 8, education: 'Bachelor’s Degree' },
-    { district: 'Azamgarh', role: 'Graphic Designer', company: 'Creative Studio', address: '2nd Floor, City Center Mall, Saharanpur', phone: '9876543216', openings: 2, education: 'Diploma in Graphic Design' },
-    { district: 'Baghpat', role: 'Receptionist', company: 'City Hospital', address: '21/B, Civil Lines, Saharanpur', phone: '9876543217', openings: 2, education: 'High School Diploma' },
-    { district: 'Bahraich', role: 'Customer Support Rep', company: 'CallHub Services', address: '45, IT Park, Saharanpur', phone: '9876543218', openings: 6, education: 'Intermediate or Higher' },
-    { district: 'Ballia', role: 'Teacher', company: 'Shishu Mandir School', address: 'Plot No. 5, Shastri Nagar, Saharanpur', phone: '9876543219', openings: 3, education: 'Bachelor’s in Education' },
-    { district: 'Balrampur', role: 'Marketing Executive', company: 'Jindal Pvt. Ltd.', address: 'Industrial Estate, Rampur Road, Saharanpur', phone: '9876543220', openings: 3, education: 'Bachelor’s in Marketing' }
-  ];
+const jobs = [
+  {
+    district: "Saharanpur",
+    role: "Delivery Associate",
+    company: "LocalMart",
+    address: "22, Circular Road, Saharanpur",
+    phone: "9876543210",
+    openings: 10,
+    education: "High School Diploma",
+  },
+  {
+    district: "Saharanpur",
+    role: "Sales Executive",
+    company: "Saharanpur Electronics",
+    address: "Shop No. 12, Main Market, Sarai Road, Saharanpur",
+    phone: "9876543211",
+    openings: 3,
+    education: "High School Diploma",
+  },
+  {
+    district: "Saharanpur",
+    role: "Accountant",
+    company: "Mittal & Sons Finance",
+    address: "15/A, Gandhi Chowk, Saharanpur",
+    phone: "9876543212",
+    openings: 1,
+    education: "Bachelor’s in Commerce",
+  },
+  {
+    district: "Saharanpur",
+    role: "Data Entry Operator",
+    company: "ABC Solutions",
+    address: "Plot No. 101, Industrial Area, Saharanpur",
+    phone: "9876543213",
+    openings: 2,
+    education: "8th Pass",
+  },
+  {
+    district: "Saharanpur",
+    role: "Office Assistant",
+    company: "Sharma Enterprises",
+    address: "56, Nehru Colony, Saharanpur",
+    phone: "9876543214",
+    openings: 2,
+    education: "Intermediate or Higher",
+  },
+  {
+    district: "Saharanpur",
+    role: "Field Sales Manager",
+    company: "Gupta Agro Products",
+    address: "19, Agriculture Market, Nakur, Saharanpur",
+    phone: "9876543215",
+    openings: 8,
+    education: "Bachelor’s Degree",
+  },
+  {
+    district: "Saharanpur",
+    role: "Graphic Designer",
+    company: "Creative Studio",
+    address: "2nd Floor, City Center Mall, Saharanpur",
+    phone: "9876543216",
+    openings: 2,
+    education: "Diploma in Graphic Design",
+  },
+  {
+    district: "Saharanpur",
+    role: "Receptionist",
+    company: "City Hospital",
+    address: "21/B, Civil Lines, Saharanpur",
+    phone: "9876543217",
+    openings: 2,
+    education: "High School Diploma",
+  },
+  {
+    district: "Saharanpur",
+    role: "Customer Support Rep",
+    company: "CallHub Services",
+    address: "45, IT Park, Saharanpur",
+    phone: "9876543218",
+    openings: 6,
+    education: "Intermediate or Higher",
+  },
+  {
+    district: "Saharanpur",
+    role: "Teacher",
+    company: "Shishu Mandir School",
+    address: "Plot No. 5, Shastri Nagar, Saharanpur",
+    phone: "9876543219",
+    openings: 3,
+    education: "Bachelor’s in Education",
+  },
+  {
+    district: "Saharanpur",
+    role: "Marketing Executive",
+    company: "Jindal Pvt. Ltd.",
+    address: "Industrial Estate, Rampur Road, Saharanpur",
+    phone: "9876543220",
+    openings: 3,
+    education: "Bachelor’s in Marketing",
+  },
+];
 
-  function showJobs() {
-    const district = document.getElementById('district').value;
-    const education = document.getElementById('education').value;
+function showJobs() {
+  const district = document.getElementById("district").value;
+  const education = document.getElementById("education").value;
 
-    const jobList = document.getElementById('job-list');
-    jobList.innerHTML = '';
+  const jobList = document.getElementById("job-list");
+  jobList.innerHTML = "";
 
-    const filteredJobs = jobs.filter(job => job.district === district && job.education === education);
-    
-    if (filteredJobs.length === 0) {
-      jobList.innerHTML = '<p>No jobs found for the selected criteria.</p>';
-    } else {
-      filteredJobs.forEach(job => {
-        const jobItem = document.createElement('div');
-        jobItem.classList.add('job-item');
-        jobItem.innerHTML = `
+  const filteredJobs = jobs.filter(
+    (job) => job.district === district && job.education === education,
+  );
+
+  if (filteredJobs.length === 0) {
+    jobList.innerHTML = "<p>No jobs found for the selected criteria.</p>";
+  } else {
+    filteredJobs.forEach((job) => {
+      const jobItem = document.createElement("div");
+      jobItem.classList.add("job-item");
+      jobItem.innerHTML = `
           <h4>${job.role} - ${job.company}</h4>
           <p><strong>Address:</strong> ${job.address}</p>
           <p><strong>Phone:</strong> ${job.phone}</p>
           <p><strong>Openings:</strong> ${job.openings}</p>
           <p><strong>Education Required:</strong> ${job.education}</p>
         `;
-        jobList.appendChild(jobItem);
-      });
-    }
+      jobList.appendChild(jobItem);
+    });
   }
+}
+
 </script>
 
 </body>
