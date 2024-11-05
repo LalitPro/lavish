@@ -326,6 +326,7 @@
   },
 
 ];
+  
 function showJobs() {
   const district = document.getElementById("district").value.toLowerCase();
   const education = document.getElementById("education").value;
@@ -333,15 +334,20 @@ function showJobs() {
   const jobList = document.getElementById("job-list");
   jobList.innerHTML = "";
 
+  console.log("Selected District:", district);
+  console.log("Selected Education:", education);
+
   const filteredJobs = jobs.filter(
-  (job) => new RegExp(district, 'i').test(job.district) && job.education === education,
-);
+    (job) => new RegExp(district, 'i').test(job.district) && job.education === education
+  );
+
+  console.log("Filtered Jobs:", filteredJobs);
 
   if (filteredJobs.length === 0) {
     jobList.innerHTML = "<p>No jobs found for the selected criteria.</p>";
   } else {
     filteredJobs.forEach((job) => {
-      const jobItem = document.createElement("div");
+        const jobItem = document.createElement("div");
       jobItem.classList.add("job-item");
       jobItem.innerHTML = `
             <h4>${job.role} - ${job.company}</h4>
@@ -356,7 +362,9 @@ function showJobs() {
   }
 }
 
+
 </script>
 
 </body>
 </html>
+
