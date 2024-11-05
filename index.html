@@ -338,7 +338,7 @@ function showJobs() {
             <p><strong>Phone:</strong> ${job.phone}</p>
             <p><strong>Openings:</strong> ${job.openings}</p>
             <p><strong>Education Required:</strong> ${job.education}</p>
-            <a href="tel:${job.phone}">Call</a> | <a href="https://wa.me/${job.phone}">WhatsApp</a>
+            <a href="tel:${job.phone}">Call</a> | <a href="https://wa.me/${"+₹91"+job.phone}">WhatsApp</a>
           `;
       jobList.appendChild(jobItem);
     });
