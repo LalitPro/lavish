@@ -316,14 +316,14 @@
 
 ];
 function showJobs() {
-  const district = document.getElementById("district").value;
-  const education = document.getElementById("education").value;
+  const district = document.getElementById("district").value.toLowerCase();
+  const education = document.getElementById("education").valuetoLowerCase();
 
   const jobList = document.getElementById("job-list");
   jobList.innerHTML = "";
 
   const filteredJobs = jobs.filter(
-    (job) => job.district === district && job.education === education,
+    (job) => job.district.toLowerCase() === district && job.education.toLowerCase() === education,
   );
 
   if (filteredJobs.length === 0) {
