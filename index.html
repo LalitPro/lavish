@@ -136,8 +136,7 @@
 
 <div id="job-list"></div>
 
-<script>
-const jobs = [
+<script>const jobs = [
   {
     district: "Saharanpur",
     role: "Delivery Associate",
@@ -237,8 +236,37 @@ const jobs = [
     openings: 3,
     education: "Bachelor’s in Marketing",
   },
+  {
+    district: "Saharanpur",
+    role: "Software Engineer",
+    company: "Tech Solutions",
+    address: "Sector 10, Industrial Area, Saharanpur",
+    phone: "9876543210",
+    whatsapp: "9876543210",
+    openings: 5,
+    educationLevel: "Bachelor's in Computer Science/IT",
+  },
+  {
+    district: "Saharanpur",
+    role: "Sales Executive",
+    company: "Electronics Mart",
+    address: "Main Market, Saharanpur",
+    phone: "9876543211",
+    whatsapp: "9876543211",
+    openings: 3,
+    educationLevel: "High School Diploma",
+  },
+  {
+    district: "Saharanpur",
+    role: "Teacher",
+    company: "Global School",
+    address: "Civil Lines, Saharanpur",
+    phone: "9876543212",
+    whatsapp: "9876543212",
+    openings: 2,
+    educationLevel: "Bachelor's in Education",
+  }
 ];
-
 function showJobs() {
   const district = document.getElementById("district").value;
   const education = document.getElementById("education").value;
@@ -257,12 +285,13 @@ function showJobs() {
       const jobItem = document.createElement("div");
       jobItem.classList.add("job-item");
       jobItem.innerHTML = `
-          <h4>${job.role} - ${job.company}</h4>
-          <p><strong>Address:</strong> ${job.address}</p>
-          <p><strong>Phone:</strong> ${job.phone}</p>
-          <p><strong>Openings:</strong> ${job.openings}</p>
-          <p><strong>Education Required:</strong> ${job.education}</p>
-        `;
+            <h4>${job.role} - ${job.company}</h4>
+            <p><strong>Address:</strong> ${job.address}</p>
+            <p><strong>Phone:</strong> ${job.phone}</p>
+            <p><strong>Openings:</strong> ${job.openings}</p>
+            <p><strong>Education Required:</strong> ${job.education}</p>
+            <a href="tel:${job.phone}">Call</a> | <a href="https://wa.me/${job.phone}">WhatsApp</a>
+          `;
       jobList.appendChild(jobItem);
     });
   }
