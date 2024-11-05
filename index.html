@@ -334,8 +334,8 @@ function showJobs() {
   jobList.innerHTML = "";
 
   const filteredJobs = jobs.filter(
-    (job) => job.district.toLowerCase() === district && job.education === education,
-  );
+  (job) => new RegExp(district, 'i').test(job.district) && job.education === education,
+);
 
   if (filteredJobs.length === 0) {
     jobList.innerHTML = "<p>No jobs found for the selected criteria.</p>";
