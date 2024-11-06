@@ -20,7 +20,7 @@
     <div class="grand">
       <div class="powerfull">
         <form id="jobForm">
-          <label for="district" style="align-self: flex-start">District</label>
+          <label for="district" oninput="clear()" style="align-self: flex-start">District</label>
           <select name="district" id="district">
             <option value="Saharanpur">Saharanpur</option>
             <option value="Muzaffarnagar">Muzaffarnagar</option>
@@ -314,6 +314,10 @@
             jobList.appendChild(jobItem);
           });
         }
+      }
+      function clear(){
+        const jobList = document.getElementById("job-list");
+        jobList.innerHTML = "";
       }
     </script>
   </body>
