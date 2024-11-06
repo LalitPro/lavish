@@ -12,7 +12,7 @@ body {
   width: 100vw;
 }
 #headerdiv {
-  height: 60px;
+  height: 10vh;
   width: 100%;
   background-color: #ff3d3d;
   color: white;
@@ -29,6 +29,7 @@ body {
 }
 #headerdiv a:hover {
   border: 2px solid white;
+  padding: 5px;
 }
 #main-job {
   display: flex;
@@ -37,9 +38,8 @@ body {
   margin-top: 20px;
 }
 .header-h5 {
-  width: 320px;
+  width: 80vw;
   border-radius: 5px;
-  background: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,7 +47,8 @@ body {
 }
 .header-h5 h5 {
   font-size: 25px;
-  color: white;
+  padding: 15px;
+  color: black;
 }
 .grand {
   display: flex;
@@ -57,9 +58,9 @@ body {
   margin-top: 20px;
 }
 .powerfull {
-  border: 3px solid grey;
+  border: 3px solid rgb(230, 230, 230);
   max-width: 300px;
-  background: lightgrey;
+  background: rgb(230, 230, 230);
   padding: 20px;
   border-radius: 20px;
   text-align: center;
@@ -73,11 +74,16 @@ select {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
+  background-color: rgb(216, 216, 216);
+  border: 1px solid rgb(216, 216, 216);
 }
 .singup button {
-  padding: 5px 20px;
-  background-color: red;
+  padding: 10px 25px;
+  background-color: rgb(120, 170, 75);
+  border-radius: 5px;
   color: white;
+  font-size: 15px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }
@@ -98,4 +104,10 @@ select {
 }
 .job-item p {
   margin-bottom: 5px;
+}
+
+#jobform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
