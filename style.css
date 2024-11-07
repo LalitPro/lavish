@@ -12,19 +12,21 @@ body {
   width: 100vw;
 }
 #headerdiv {
-  height: 10vh;
+  height: 60px;
   width: 100%;
-  background-color: #ff3d3d;
+  background-color: #515151;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 30px;
+  justify-content: flex-start;
+  font-size: 24px;
 }
 #headerdiv a {
   color: white;
   text-decoration: none;
   padding: 5px;
+  margin-left: 25px;
+  font-family: sans-serif;
   border-radius: 15px;
 }
 #headerdiv a:hover {
@@ -41,14 +43,15 @@ body {
   width: 80vw;
   border-radius: 5px;
   display: flex;
+  background-color: #f33939;
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
 }
 .header-h5 h5 {
-  font-size: 25px;
+  font-size: 20px;
   padding: 15px;
-  color: black;
+  color: #ffffff;
 }
 .grand {
   display: flex;
@@ -56,30 +59,36 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  gap: 20px;
 }
 .powerfull {
-  border: 3px solid rgb(230, 230, 230);
   max-width: 300px;
-  background: rgb(230, 230, 230);
+  background-color: #00000029;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
+  border: 0.5px solid #2e2e2e;
+  border-radius: 5px;
 }
+
 .powerfull label,
 .powerfull select,
 .powerfull button {
   margin-top: 10px;
+  background-color: transparent;
+}
+.powerfull label {
+  color: black;
 }
 select {
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
-  background-color: rgb(216, 216, 216);
-  border: 1px solid rgb(216, 216, 216);
+  border: 1px solid #979797;
 }
 .singup button {
   padding: 10px 25px;
-  background-color: rgb(120, 170, 75);
+  background-color: #f33939;
   border-radius: 5px;
   color: white;
   font-size: 15px;
