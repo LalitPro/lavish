@@ -1,4 +1,4 @@
-const data = [
+const jobs = [
   {
     district: "Muzaffarnagar",
     role: "Super Visor",
@@ -27,7 +27,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Gradute",
+    education: "High",
   },
   {
     district: "Muzaffarnagar",
@@ -37,7 +37,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Graduate",
+    education: "Bachelor",
   },
   {
     district: "Shamli",
@@ -57,7 +57,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Graduate",
+    education: "Intermediate",
   },
   {
     district: "Shamli",
@@ -67,7 +67,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 12,
-    education: "8th",
+    education: "Diploma",
   },
   {
     district: "Shamli",
@@ -77,7 +77,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 6,
-    education: "Graduate",
+    education: "High",
   },
   {
     district: "Shamli",
@@ -87,7 +87,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 6,
-    education: "Matric",
+    education: "Bachelor",
   },
   {
     district: "Saharanpur",
@@ -107,7 +107,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 3,
-    education: "8th",
+    education: "Intermediate",
   },
   {
     district: "Saharanpur",
@@ -117,7 +117,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 1,
-    education: "Matric",
+    education: "Diploma",
   },
   {
     district: "Saharanpur",
@@ -127,7 +127,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "8th Pass",
+    education: "High",
   },
   {
     district: "Saharanpur",
@@ -137,7 +137,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Graduate",
+    education: "Bachelor",
   },
   {
     district: "Saharanpur",
@@ -147,7 +147,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 8,
-    education: "Graduate",
+    education: "8th",
   },
   {
     district: "Saharanpur",
@@ -157,7 +157,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Graduate",
+    education: "Intermediate",
   },
   {
     district: "Saharanpur",
@@ -167,7 +167,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "8th",
+    education: "Diploma",
   },
   {
     district: "Saharanpur",
@@ -177,7 +177,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 6,
-    education: "8th",
+    education: "High",
   },
   {
     district: "Saharanpur",
@@ -187,7 +187,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 3,
-    education: "Matric",
+    education: "Bachelor",
   },
   {
     district: "Saharanpur",
@@ -197,7 +197,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 3,
-    education: "Graduate",
+    education: "8th",
   },
   {
     district: "Saharanpur",
@@ -207,7 +207,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 5,
-    education: "Graduate",
+    education: "Intermediate",
   },
   {
     district: "Saharanpur",
@@ -217,7 +217,7 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 3,
-    education: "Matric",
+    education: "Diploma",
   },
   {
     district: "Saharanpur",
@@ -227,8 +227,163 @@ const data = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "Graduate",
+    education: "High",
+  },
+  {
+    district: "Muzaffarnagar",
+    role: "Lab Helper",
+    company: "Optech Pharmaceuticals",
+    address:
+      "9-A, Lal Bagh, Gandhi Colony, Muzaffarnagar, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Bachelor",
+  },
+  {
+    district: "Muzaffarnagar",
+    role: "Engineer",
+    company: "NCS Technologies",
+    address: "37-B, New Mandi, Muzaffarnagar, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 2,
+    education: "8th",
+  },
+
+  {
+    district: "Muzaffarnagar",
+    role: "Seller",
+    company: "Kayna Healthcare",
+    address:
+      "Kunwar Vinod Market, 48/31, Mahaveer Chowk, Shiv Chowk, Civil Lines South, Muzaffarnagar, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Intermediate",
+  },
+
+  {
+    district: "Muzaffarnagar",
+    role: "Doctor",
+    company: "Vikram Laboratories Pvt Ltd.",
+    address:
+      "FM2W+939, Meerut Rd, Behind Tubewell Colony, Amba Vihar, Muzaffarnagar, Sujroo, Uttar Pradesh 251002",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 4,
+    education: "Diploma",
+  },
+  {
+    district: "Muzaffarnagar",
+    role: "Manager",
+    company: "Shri Bankey Bihari Traders (Waste Paper)",
+    address:
+      "06, Vasundhara Residency, Phase 1, Muzaffarnagar, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "High",
+  },
+
+  {
+    district: "Muzaffarnagar",
+    role: "Trader",
+    company: "Nav durga trading company",
+    address: "FP8G+PH9, Gandhi Nagar, Muzaffarnagar, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Bachelor",
+  },
+
+  {
+    district: "Muzaffarnagar",
+    role: "Computer Operator",
+    company: "DREAMS INDUSTRIES",
+    address:
+      "105/1, near ZOOM INSTITUTE, Shivpuri, New Mandi, Muzaffarnagar, Uttar Pradesh 251001",
+    whatsaap: "8791160360",
+    openings: 2,
+    education: "8th",
+  },
+  {
+    district: "Muzaffarnagar",
+    role: "Engineer",
+    company: "Sitara Engineering Company",
+    address: "Muzaffarnagar, Sarwat, Uttar Pradesh 251001",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Intermediate",
+  },
+  {
+    district: "Shamli",
+    role: "Manger",
+    company: "Mahadev Tiles",
+    address:
+      "Karnal - Meerut Rd, near Sugar Mill Distillery, Dayanand Nagar, Shamli, Shamli Rural, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Diploma",
+  },
+
+  {
+    district: "Shamli",
+    role: "Accountant",
+    company: "Upper Doab Sugar Mill, Shamli",
+    address: "C8V7+2RF, Shamli, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 2,
+    education: "High",
+  },
+
+  {
+    district: "Shamli",
+    role: "Manager",
+    company: "Davalndia Shamli",
+    address:
+      "Delhi road, near Atlas Dharam Kanta, Shamli, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 4,
+    education: "Bachelor",
+  },
+
+  {
+    district: "Shamli",
+    role: "Seller",
+    company: "PAL Fruits Company C17 New Sabzi Mandi Shamli (Uttar Pradesh)",
+    address: "C17 New sabzi Mandi, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "8th",
+  },
+
+  {
+    district: "Shamli",
+    role: "Manager",
+    company: "Sangal creative printers",
+    address: "V.V. Inter College Rd, Shamli, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 2,
+    education: "Intermediate",
+  },
+  {
+    district: "Shamli",
+    role: "Supervisor",
+    company: "Laxmi Metal Industries, Delhi Road Shamli",
+    address:
+      "Near City Green, Saharanpur - Delhi Rd, Shamli, Uttar Pradesh 247776",
+    phone: "8791160360",
+    whatsaap: "8791160360",
+    openings: 3,
+    education: "Diploma",
   },
 ];
 
-export default data;
+export default jobs;
