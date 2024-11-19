@@ -27,7 +27,7 @@ const jobs = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "High",
+    education: "High School",
   },
   {
     district: "Muzaffarnagar",
@@ -77,7 +77,7 @@ const jobs = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 6,
-    education: "High",
+    education: "High School",
   },
   {
     district: "Shamli",
@@ -127,7 +127,7 @@ const jobs = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "High",
+    education: "High School",
   },
   {
     district: "Saharanpur",
@@ -177,7 +177,7 @@ const jobs = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 6,
-    education: "High",
+    education: "High School",
   },
   {
     district: "Saharanpur",
@@ -227,7 +227,7 @@ const jobs = [
     phone: "8791160360",
     whatsapp: "8791160360",
     openings: 2,
-    education: "High",
+    education: "High School",
   },
   {
     district: "Muzaffarnagar",
@@ -283,7 +283,7 @@ const jobs = [
     phone: "8791160360",
     whatsaap: "8791160360",
     openings: 3,
-    education: "High",
+    education: "High School",
   },
 
   {
@@ -337,7 +337,7 @@ const jobs = [
     phone: "8791160360",
     whatsaap: "8791160360",
     openings: 2,
-    education: "High",
+    education: "High School",
   },
 
   {
