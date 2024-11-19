@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -116,4 +117,8 @@ main {
 
 .job-item a:hover {
   text-decoration: underline;
+}
+
+img {
+  width: 500px;
 }

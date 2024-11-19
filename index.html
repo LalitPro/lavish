@@ -9,7 +9,7 @@
   <body>
     <header id="header">
       <nav>
-        <a href="/" class="nav-link">Home</a>
+        <a href="" class="nav-link">Home</a>
       </nav>
     </header>
 
@@ -18,27 +18,29 @@
         <h2>नौकरी ढूँढे</h2>
         <form id="jobForm">
           <div class="form-group">
-            <label for="district">District</label>
+            <label for="district">जिला</label>
             <select name="district" id="district">
-              <option value="Saharanpur">Saharanpur</option>
-              <option value="Muzaffarnagar">Muzaffarnagar</option>
-              <option value="Shamli">Shamli</option>
+              <option value="Saharanpur">सहारनपुर</option>
+              <option value="Muzaffarnagar">मुज़फ्फरनगर</option>
+              <option value="Shamli">शामली</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="education">Education Level</label>
+            <label for="education">शिक्षा स्तर</label>
             <select name="education" id="education">
-              <option value="High">High school</option>
-              <option value="Bachelor">Bachelor's</option>
-              <option value="8th">8th Pass</option>
-              <option value="Intermediate">Intermediate or Higher</option>
-              <option value="Diploma">Diploma</option>
+              <option value="High">High school || हाई स्कुल</option>
+              <option value="Bachelor">Bachelor's || स्नातक</option>
+              <option value="8th">8th Pass || आठवी 8</option>
+              <option value="Intermediate">
+                Intermediate or Higher || इंटरमीडिएट या उच्चतर
+              </option>
+              <option value="Diploma">Diploma || डिप्लोमा</option>
             </select>
           </div>
 
           <button type="button" class="search-btn" onclick="showJobs()">
-            Show Me Jobs
+            नौकरी दिखाओ
           </button>
         </form>
       </section>
@@ -46,11 +48,9 @@
       <section id="job-list" class="job-list"></section>
     </main>
 
+    <img src="./img.jpg" />
+
     <!-- Script section -->
-    <script type="module">
-      import jobs from "./data.js";
-      window.jobs = jobs;
-    </script>
     <script src="app.js"></script>
   </body>
 </html>
