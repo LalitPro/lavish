@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header {
@@ -32,7 +32,9 @@ main {
   width: 100%;
   max-width: 900px;
   margin-top: 20px;
+  margin-bottom: auto;
   padding: 20px;
+  flex-grow: 10;
 }
 
 .search-section {
@@ -121,4 +123,11 @@ main {
 
 img {
   width: 500px;
+}
+
+#footimg {
+  width: 100vw;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 0;
 }

@@ -387,6 +387,9 @@ const jobs = [
 ];
 
 function showJobs() {
+  const img = document.getElementById("footimg");
+  img.style.display = "none";
+
   const district = document.getElementById("district").value;
   const education = document.getElementById("education").value;
   const upper = document.getElementById("upper");
@@ -412,8 +415,14 @@ function showJobs() {
                 <p><strong>Address:</strong> ${job.address}</p>
                 <p><strong>Phone:</strong> ${job.phone}</p>
                 <p><strong>Openings:</strong> ${job.openings}</p>
-                <p><strong>Education Required:</strong> ${job.education}</p>
-                <a href="tel:${job.phone}">Call</a> | <a href="https://wa.me/91${job.phone}">WhatsApp</a>
+                <p><strong>Education Required:</strong> ${job.education}${
+        job.education == "High" ? " School" : ""
+      }${job.education == "8th" ? " Pass" : ""}</p>
+                <a href="tel:${
+                  job.phone
+                }">Call</a> | <a href="https://wa.me/91${
+        job.phone
+      }">WhatsApp</a>
             `;
       jobList.appendChild(jobItem);
     });
