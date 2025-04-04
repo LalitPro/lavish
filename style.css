@@ -22,6 +22,9 @@ header {
   padding: 15px;
   background-color: #515151;
   color: white;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .nav-link {
@@ -51,7 +54,7 @@ main {
   text-align: center;
   padding: 4px 10px;
   margin-bottom: 15px;
-  color: #f33939;
+  color: black;
  background-color: #33333331;
 }
 
