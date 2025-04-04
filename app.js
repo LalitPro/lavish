@@ -394,6 +394,11 @@ function showJobs() {
   const education = document.getElementById("education").value;
   const upper = document.getElementById("upper");
 
+  if(district == "no" || education == "no"){
+    alert(district=="no"?"Select district":"Select education level");
+    return;
+  }
+
   const jobList = document.getElementById("job-list");
   jobList.innerHTML = "";
 

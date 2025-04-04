@@ -21,7 +21,8 @@
         <form id="jobForm">
           <div class="form-group">
             <label for="district">जिला</label>
-            <select name="district" id="district">
+            <select required name="district" id="district">
+              <option disabled value="no" selected>Select District</option>
               <option value="Saharanpur">सहारनपुर</option>
               <option value="Muzaffarnagar">मुज़फ्फरनगर</option>
               <option value="Shamli">शामली</option>
@@ -29,7 +30,8 @@
           </div>
           <div class="form-group">
             <label for="education">शिक्षा स्तर</label>
-            <select name="education" id="education">
+            <select required name="education" id="education">
+              <option disabled value="no" selected>Select Education Level</option>
               <option value="High">High school</option>
               <option value="Bachelor">Bachelor's</option>
               <option value="8th">8th Pass</option>
